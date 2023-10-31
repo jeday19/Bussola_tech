@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Aluno</title>
+</head>
+
+<style>
+  body {
+    background-image: url(/assets/img/img_fundo.png);
+  }
+</style>
+
+<body>
+    <h1>Cadastro de Aluno:</h1>
+    <form action="processar_cadastro.php" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+
+        <label for="email">Seu e-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="email">Confirme seu e-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="senha">Senha de acesso:</label>
+        <input type="password" id="senha" name="senha" required>
+        <label for="senha">Confirme sua senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br>
+
+        <label for="trilha">Trilha:</label>
+        <select id="trilha" name="trilha">
+            <option value="trilha1">Trilha 1</option>
+            <option value="trilha2">Trilha 2</option>
+            <option value="trilha3">Trilha 3</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
